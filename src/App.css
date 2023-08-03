@@ -1,0 +1,9 @@
+body{
+  background-image: linear-gradient(rgb(149, 210, 221)10%,rgb(187, 100, 100) 40%,white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+*{
+  box-sizing: border-box;
+}
