@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 .header{
     display: flex;
     justify-content: space-around;
@@ -27,12 +32,11 @@ table{
     border-collapse: collapse;
     border-radius: 10px;
     box-shadow: 0px 0px 1px;
-    /* border-spacing: 100px; */
-    /* margin-left: -200px; */
+    margin-top: 20px;
 }
 tr{
     border-bottom: 1px solid rgb(177, 177, 177);
-    height: 65px;
+    height: 60px;
 }
 td{
     font-size: 20px;
@@ -49,8 +53,10 @@ tr:last-child{
 #Caption{
     display: flex;
     justify-content: space-between;
+    font-family: 'EB Garamond', serif;
 }
 #AddNew{
+    font-family: 'EB Garamond', serif;
     cursor: pointer;
     font-size: 25px;
     border: 1px solid black;

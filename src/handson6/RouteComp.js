@@ -6,6 +6,7 @@ import Contactus from './Contactus'
 import Store from './Store'
 import './style.css'
 import AddNewStudent from './AddNewStudent'
+import EditStudent from './EditStudent'
 
 const RouteComp = () => {
   const [Data,setData] = useState([
@@ -35,7 +36,13 @@ const RouteComp = () => {
       <Route path='/AddStudent' element={
         <Store.Provider value={{Students : Data , UpdateStd : setData}}>
           <AddNewStudent/>
-        </Store.Provider>} />
+        </Store.Provider>
+      }/>
+      <Route path='/Student/:id' element={
+        <Store.Provider value={{Students : Data , UpdateStd : setData}}>
+          <EditStudent/>
+        </Store.Provider>
+      }/>
     </Routes>
     </BrowserRouter>
     </>

@@ -28,7 +28,7 @@ const Student = () => {
                                 <td>{item.Age}</td>
                                 <td>{item.Course}</td>
                                 <td>{item.Batch}</td>
-                                <td><NavLink to='#'>Edit</NavLink></td>
+                                <td><NavLink to={"/Student/"+index} state={{data:index}}>Edit</NavLink></td>
                                 
                             </tr>
                         )
